@@ -47,7 +47,7 @@ public class ConectorSql {
 			while (rs.next()) {
 				String Lista = "ID-> " + rs.getInt("id_Articulos") + " , Descripcion-> "
 						+ rs.getString("DescripcionArticulos") + " , Cantidad-> " + rs.getDouble("CantidadArticulos")
-						+ " , Precio-> " + rs.getDouble("PrecioArticulos")+"€";
+						+ " , Precio-> " + rs.getDouble("PrecioArticulos")+" €";
 				ListaArticulos.add(Lista);
 				ConsultaArticulos.tabla.addCell(Lista);
 			}
