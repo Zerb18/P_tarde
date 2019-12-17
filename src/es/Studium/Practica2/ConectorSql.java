@@ -385,7 +385,7 @@ public class ConectorSql {
 
 			while (rs.next()) {
 				ListaTickets.add("IDTicket-> " + rs.getInt("id_Tickets") + " FechaTicket-> " + rs.getDate("FechaTicket")
-				+ " TotalTicket-> " + rs.getDouble("totalTicket"));
+				+ " TotalTicket-> " + rs.getDouble("totalTicket")+"€");
 			}
 		} catch (ClassNotFoundException cnfe) {
 			System.out.println("Error 1: " + cnfe.getMessage());
